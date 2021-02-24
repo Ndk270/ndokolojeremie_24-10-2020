@@ -1,0 +1,570 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ /* font-family: 'Raleway', sans-serif;*/
+
+}
+
+body {
+  margin: auto;
+  width: 80%;
+}
+
+/*****DEBUT HEADER*****/
+
+
+header{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 70%;
+}
+
+.heb,.act,.sincrire{
+  width: 10%;
+}
+header div .two{
+      height: 5vh;
+
+  }
+
+  a {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+  }
+
+  .heb:hover, .act:hover {
+    border-top: 1px solid #0065FC;
+    color: #0065FC;
+  }
+
+  .sincrire {
+    color: #0065FC !important;
+  }
+/*****FIN HEADER*****/
+
+
+/*****DEBUT NAV*****/
+
+  /*SEARCH BAR*/
+ #info .bar {
+    display: flex;
+    padding-top: 2vh;
+  }
+  
+  #info  .bar input {
+    height: 6vh;
+    border-color: #F2F2F2;
+    border: 1px solid#F2F2F2;
+    width: 15%;
+  }
+  
+  #info  ::placeholder {
+    color: black;
+  }
+  
+  #info  .bar .fa-map-marker-alt {
+    width: 3%;
+    background-color: #F2F2F2;
+    text-align: center;
+    line-height: 2.5;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+  }
+  #info  .bar button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    width: 8%;
+  }
+
+  #info   .bar .fa-search {
+    display: none;
+  }
+    /***FIN SEARCH BAR***/
+
+    /*FILTRES*/
+  
+
+  
+
+  
+  
+
+  /***FIN FILTRES***/
+  
+   /*LOGEMENTS DISPO*/
+   
+   .logement_dispo .fa-xs{
+    border: 1px solid #F2F2F2;
+    color: #0065FC;
+    width: 1.5%;  
+    text-align: center;
+    height: 2.5vh;
+    border-radius: 100%;
+    line-height: 1.3;
+  }
+  /***FIN LOGEMENTS DISPO***/
+/*****FIN NAV******/
+
+
+/*****DEBUT MAIN*****/
+main{
+  display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+}
+
+  /*HEBERGEMENT*/
+#hebergement{
+  width: 68%;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+}
+#hebergement h2{
+  padding-top: 3vh;
+  margin: 0 0 1rem 4%;
+}
+.wrapper{
+  display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 1vh;
+    margin: 0 auto;   
+}
+#hebergement article{
+  width: 28%;
+}
+.ranger1 img{
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  height: 15vh;
+}
+.ranger1 {
+  background-color: white;
+  border-radius: 20px;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1rem 4%;
+  padding: .5%;
+}
+#hebergement .fa-star {
+  color: #0065FC;
+}
+#hebergement .grey_star {
+  color: #F2F2F2 !important;
+}
+.afficher_plus{
+  margin: 0 0 1rem 4%;
+}
+  /*** FIN HEBERGEMENT***/
+
+  /*POPULAIRE*/
+aside{
+  background-color: #F2F2F2;
+  width: 27%;
+  border-radius: 20px;
+}
+.icone_finance{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3vh;
+}
+.card_populaire {
+  width: 80%;
+  margin: 0 0 2rem 10%;
+  padding-top: 5vh;
+}
+.colone {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  width: 100%;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  border-top: 5px solid white;
+}
+.colone img {
+  height: 10vh;
+  width: 40%;
+  border-radius: 10px 0px 0px 10px;
+  background-position: center;
+}
+.populaire .fa-star {
+  color: #0065FC;
+}
+aside .grey_star {
+  color: #F2F2F2 !important;
+}
+  /***FIN POLPULAIRE***/
+
+    /*ACTIVITE*/
+    #activite{
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+    }
+    #activite h2 {
+      width: 100%;
+    }
+    #activity_card {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 5vh;
+    }
+    .longimg {
+      width: 23%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .longimg img {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 30px 30px 0px 0px;
+      height: 40vh;
+    }
+    .textimg {
+      width: 100%;
+      border-radius: 0px 0px 30px 30px;
+      -webkit-box-shadow: 5px 5px 19px 18px rgba(0, 0, 0, 0.36);
+      box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.10);
+      height: 7vh;
+    }
+    .textimg h4 {
+      margin-left: 5%;
+    }
+    /*FIN IMG 1 */
+    .img-milieu {
+      width: 23%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    .imgshort {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .imgshort img {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 30px 30px 0px 0px;
+      height: 17vh;
+    }
+    /*FIN IMG 2 */   
+    .imgshort2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    } 
+    .imgshort2 img {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 30px 30px 0px 0px;
+      height: 10vh;
+    }
+    /* FIN IMG 3 */  
+    .img_right {
+      width: 23%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    .imgshort5 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    } 
+    .imgshort5 img {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 30px 30px 0px 0px;
+      height: 15vh;
+    }
+    /*FIN IMG 5 */
+    .imgshort6 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .imgshort6 img {
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 30px 30px 0px 0px;
+      height: 16vh;
+    }
+/************ FIN ACTIVITE ********************/
+
+/* DEBUT FOOTER */
+footer {
+  display: flex;
+  background: #F2F2F2;
+  width: 100%;
+  justify-content: space-around;
+  
+  font-size: 15px;
+  height: 20vh;
+}
+/* FIN FOOTER */
+
+
+/******************************************************* DEBUT MEDIA QUERIES IPHONE **************************************************************/
+@media all and (max-width: 667px){
+  body {
+    margin: auto;
+    width: 100%;
+  }
+ /*****DEBUT HEADER*****/
+  .logo,.heb,.act,.sincrire{
+      width: 50%;
+      text-align: center;
+      padding: 1rem;
+      box-sizing: border-box;
+  }
+  .heb{
+      order: 3;
+  }
+  .act{
+      order: 4;
+  }
+  .sincrire{
+      order: 2;
+  }
+  .heb, .act {
+    border-top: none;
+    border-bottom: 1px solid #F2F2F2;
+  }
+  .heb:hover, .act:hover {
+    border-top: none;
+    border-bottom: 1px solid #0065FC;
+  }
+/*****FIN HEADER*****/
+
+/*****DEBUT NAV*****/
+#info h2,p{
+padding-top: 2vh;
+}
+#info h2{
+  width: 80%;
+  text-align: center;
+  margin: 0 0 0rem 2%;
+}
+   /* SEARCH BAR */
+   .bar {
+    margin: 0 0 0rem 8%;
+  }
+ #info .bar input {
+    height: 6vh;
+    width: 60%;
+  }
+  #info  .bar .fa-map-marker-alt {
+    width: 15%;
+  }
+  #info  .bar span {
+    display: none;
+  }
+  #info  .bar button {
+    width: 10%;
+    border-radius: 10%;
+  }
+  #info  .bar .fa-search {
+    display: block;
+    color: none;
+    margin-left: 10%;
+  }
+  /**FIN SEARCH BAR**/
+ 
+
+   /*LOGEMENTS DISPO*/
+.logement_dispo .fa-xs{
+  border: 1px solid #F2F2F2;
+  color: #0065FC;
+  width: 1.5%;  
+  text-align: center;
+  height: 3vh;
+  border-radius: 100%;
+  line-height: 1.3;
+  width: 8%;
+}
+.logement_dispo {
+  width: 100%;
+}
+/*** LOGEMENTS DISPO ***/
+ /*************FIN NAV*************/
+
+ /**DEBUT MAIN**/
+main{
+  display: flex;
+    flex-direction: column-reverse;
+}
+/*POPULAIRE*/
+aside{
+  width: 100%;
+  border-radius: 0%;
+
+}
+.card_populaire {
+  width: 90%;
+  margin: 0 0 2rem 5%;
+}
+.colone img {
+  height: 20vh;
+  width: 40%;
+}
+/************* FIN POPULAIRE *************/
+
+  /*HEBERGEMENT*/
+  #hebergement{
+    width: 90%;
+    background-color: white;
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  #hebergement article{
+    width: 100%;
+  }
+  .ranger1 {
+    width: 100%;
+    -webkit-box-shadow: 5px 5px 19px 18px rgba(0, 0, 0, 0.36);
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.10);
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    margin: 0 0 2rem 6%;
+  }
+  .ranger1 img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    height: 15vh;
+  }
+  /**** FIN HEBERGEMENT *****/
+
+/********************** FIN MAIN ****************************/
+
+    
+  /* ACTIVITE */
+
+  #activity_card {
+    flex-wrap: wrap;
+  }
+  #activity_card img {
+    padding-top: 5%;
+  }
+  .longimg {
+    width: 90%;
+  }
+  .longimg img {
+    height: 18vh;
+  }
+  .img-milieu {
+    width: 90%;
+  }
+  .img-milieu img {
+    height: 18vh;
+  }
+  .img_right {
+    width: 90%;
+  }
+  .img_right img {
+    height: 18vh;
+  }
+  /************* FIN ACTIVITE *************/
+
+
+ /* FOOTER */
+ footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+}
+/************* FIN FOOTER *************/ 
+
+}
+
+
+/******************************************************* FIN MEDIA QUERIES IPHONE **************************************************************/
+
+
+/******************************************************* DEBUT MEDIA QUERIES TABLETTE **************************************************************/
+
+@media only screen 
+  and (min-device-width: 667px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+/** HEADER **/
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo{
+    width: 60%;
+  }
+  /*** FIN HEADER ***/
+
+    /* SEARCH BAR */
+    .bar {
+      margin: 0 0 0rem 8%;
+    }
+   #info .bar input {
+      height: 6vh;
+      width: 70%;
+    }
+    #info  .bar span {
+      display: none;
+    }
+    #info  .bar .fa-map-marker-alt {
+      width: 15%;
+      background-color: #F2F2F2;
+      text-align: center;
+      line-height: 4.5;
+    }
+    #info  .bar .fa-search {
+      display: block;
+      color: none;
+      margin-left: 10%;
+    }
+    /**FIN SEARCH BAR**/
+
+
+  /** FILTRES **/
+      .filtres{
+        padding-top: 2vh;
+      }
+  /***FIN FILTRES***/
+
+    /*HEBERGEMENT*/
+  .afficher_plus{
+    margin: 0 0 3rem 4%;
+  }
+  /***FIN HEBERGEMENT***/
+
+  
+  /** ACTIVITE **/
+  .textimg {
+    width: 100%;
+    text-align: center;
+    height: 3vh;
+  }
+  /*** FIN ACTIVITE ***/
+
+}
+/******************************************************* FIN MEDIA QUERIES TABLETTE **************************************************************/
+
+
