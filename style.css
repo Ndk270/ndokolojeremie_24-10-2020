@@ -155,7 +155,7 @@ header div .two{
     display: inline;
     margin: 0 .5rem 0rem;
   }
-  #info .filtres:hover{
+  #info .filtres div:hover{
     color: red;
   }
   #info .filtres span{
