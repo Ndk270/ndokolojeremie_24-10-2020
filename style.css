@@ -673,20 +673,18 @@ aside{
   padding-top: 1vh;
 }
 .colone img {
-  height: 220px;
-  width: 30%;
-  
+  max-height: 240px;
+}
+aside .test {
+  padding-top: 1vh;
+  margin: 0 0 0rem 6%;
+  width: 45%;
 }
 .icone_finance{
   margin: 0 0 1rem ;
 }
 
-aside .test .stars{
-  padding-top: 6vh;
-}
-aside .test .stars3{
-  padding-top: 6.5vh;
-}
+
 
 
 /************* FIN POPULAIRE *************/
