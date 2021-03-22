@@ -305,7 +305,7 @@ aside{
   border-top: 5px solid white;
 }
 .colone img {
-  height: 12vh;
+  height: 120px;
   width: 35%;
   border-radius: 10px 0px 0px 10px;
   background-position: center;
@@ -325,7 +325,7 @@ aside .grey_star {
 aside .test {
   padding-top: 1vh;
   margin: 0 0 0rem 6%;
-
+  width: 55%;
 }
 aside .test p{
   padding-top: .5vh;
