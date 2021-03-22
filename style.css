@@ -290,7 +290,7 @@ aside{
 }
 .card_populaire {
   width: 80%;
-  margin: 0 0 0rem 10%;
+  margin: 0 0 1rem 10%;
   padding-top: 4.5vh;
 }
 .colone {
@@ -305,7 +305,7 @@ aside{
   border-top: 5px solid white;
 }
 .colone img {
-  height: 120px;
+  height: 140px;
   width: 35%;
   border-radius: 10px 0px 0px 10px;
   background-position: center;
@@ -673,8 +673,9 @@ aside{
   padding-top: 1vh;
 }
 .colone img {
-  height: 20vh;
-  width: 40%;
+  height: 220px;
+  width: 30%;
+  
 }
 .icone_finance{
   margin: 0 0 1rem ;
@@ -850,7 +851,7 @@ border-bottom: 1px solid #0065FC;
       margin: 0 0 0rem 8%;
     }
    #info .bar input {
-      height: 6vh;
+      height: 70px;
       width: 70%;
     }
     #info  .bar span {
