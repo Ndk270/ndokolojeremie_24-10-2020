@@ -237,6 +237,7 @@ main{
   margin: 0 0 1rem 4%;
   padding: .5%;
 }
+
 #hebergement .fa-star {
   color: #0065FC;
 }
@@ -251,10 +252,14 @@ main{
   font-weight: 600;
 }
 #hebergement .test2{
-  margin: 0 0 0rem 7%;
   padding-top: 1vh;
 }
-#hebergement .ranger1 span::after {
+.ranger1 h3, .stars1{
+  margin: 0 0 0rem 7%;
+
+}
+
+#hebergement .ranger1 a::after {
   color: black;
   content: '€';
   font-weight: bold;
@@ -304,6 +309,7 @@ aside{
 .colone span{
   font-weight: 600;
 }
+
 .populaire .fa-star {
   color: #0065FC;
 }
@@ -312,7 +318,8 @@ aside .grey_star {
 }
 aside .test {
   padding-top: 1vh;
-  margin: 0 0 0rem 7%;
+  margin: 0 0 0rem 6%;
+
 }
 aside .test p{
   padding-top: .5vh;
@@ -367,10 +374,13 @@ aside .test p::after {
       -webkit-box-shadow: 5px 5px 19px 18px rgba(0, 0, 0, 0.36);
       box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.10);
       height: 6vh;
-    }
-    .textimg h4 {
-      margin: 0 0 0rem 5%;
       padding-top: 2vh;
+
+    }
+   
+    .textimg a{
+      margin: 0 0 0rem 3%;
+      font-weight: 600;
     }
     /*FIN IMG 1 */
     .img-milieu {
@@ -483,7 +493,7 @@ footer {
   -ms-flex-pack: start;
   justify-content: flex-start;
   font-size: 15px;
-  height: 20vh;
+  height: 25vh;
 }
 .footer_align{
   margin: 0 10rem 0rem 5%;
@@ -697,6 +707,10 @@ aside .test .stars3{
   .afficher_plus{
     margin: 0 0 1rem ;
   }
+  .ranger1 h3, .stars1{
+    margin: 0 0 0rem 6%;
+  
+  }
   /**** FIN HEBERGEMENT *****/
 
 /********************** FIN MAIN ****************************/
@@ -735,8 +749,12 @@ aside .test .stars3{
  
   .textimg {
     border-radius: 0px 0px 15px 15px;
-    height: 7vh;
+    height: 8.5vh;
   }
+  
+ 
+ 
+  
   /************* FIN ACTIVITE *************/
 
 
@@ -770,21 +788,41 @@ aside .test .stars3{
 
 @media only screen 
   and (min-width: 667px) 
-  and (max-width: 1112px)
+  and (max-width: 1364px)
   {
-/** HEADER **/
-  header{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .logo{
-    width: 60%;
-  }
-  /*** FIN HEADER ***/
+ /*****DEBUT HEADER*****/
+ .logo,.heb,.act,.sincrire{
+  width: 50%;
+  text-align: center;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.heb{
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+.act{
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+.sincrire{
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.heb, .act {
+border-top: none;
+border-bottom: 1px solid #F2F2F2;
+}
+.heb:hover, .act:hover {
+border-top: none;
+border-bottom: 1px solid #0065FC;
+}
+/*****FIN HEADER*****/
+
 
     /* SEARCH BAR */
     .bar {
@@ -810,49 +848,176 @@ aside .test .stars3{
     /**FIN SEARCH BAR**/
 
 
-  /** FILTRES **/
-      .filtres{
-        padding-top: 2vh;
-      }
-  /***FIN FILTRES***/
+  /*FILTRES*/
 
-    /*HEBERGEMENT*/
-    #hebergement article{
-      width: 40%;
-    }
+  .filtres{
+    padding-top: 3vh;
+    padding-left: 5%;
+
+  }
+  #info .filtres div{
+    border: 1px solid #F2F2F2;
+    background-color: white;
+    border-radius: 20px;
+    width: auto;
+    display: inline;
+    margin: 0 .5rem .9rem;
+
+  }
+  .filtres h4{
+    padding-bottom: 2vh;
+    width: 100%;
+    padding-left: 4%;
+
+  }
+  #info .filtres span{
+    padding: 2vh;
+  }
+  
+  
+
+  /**FIN FILTRES**/
+
+  /**DEBUT MAIN**/
+main{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding-top: 1vh;
+}
+
+/*POPULAIRE*/
+aside{
+  width: 100%;
+  border-radius: 0%;
+
+}
+.card_populaire {
+  width: 90%;
+  margin: 0 0 1rem 5%;
+  padding-top: 1vh;
+}
+.colone img {
+  height: 20vh;
+  width: 40%;
+}
+.icone_finance{
+  margin: 0 0 1rem ;
+}
+
+aside .test .stars{
+  padding-top: 6vh;
+}
+aside .test .stars3{
+  padding-top: 6.5vh;
+}
+
+/************* FIN POPULAIRE *************/
+
+  /*HEBERGEMENT*/
+  #hebergement{
+    width: 90%;
+    background-color: white;
+  }
+  .wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #hebergement article{
+    width: 100%;
+  }
+  .ranger1 {
+    width: 100%;
+    -webkit-box-shadow: 5px 5px 19px 18px rgba(0, 0, 0, 0.36);
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.10);
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    margin: 0 0 1rem 5%;
+  }
+  .ranger1 img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    height: 15vh;
+  }
   .afficher_plus{
-    margin: 0 0 3rem 4%;
+    margin: 0 0 1rem ;
   }
-  /***FIN HEBERGEMENT***/
+  .ranger1 h3, .stars1{
+    margin: 0 0 0rem 6%;
+  
+  }
+  /**** FIN HEBERGEMENT *****/
 
-  /*POPULAIRES*/
-  .card_populaire {
-    margin: 0 0 0rem 10%;
-    padding-top: 8vh;
-  }
-  aside .test {
-    padding-top: 1vh;
-    margin: 0 0 1rem 7%;
-  }
-  aside .test p{
-    padding-top: 0vh;
-  }
-  aside .test .stars{
-    padding-top: 0vh;
-  }
-  /***FIN POPULAIRES***/
+/********************** FIN MAIN ****************************/
 
   
-  /** ACTIVITE **/
+  /* ACTIVITE */
+
+  #activity_card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #activite h2{
+        padding-left: 3vh;
+  }
+  #activity_card img {
+    padding-top: 5%;
+  }
+  .longimg {
+    width: 90%;
+  }
+  .longimg img {
+    height: 20vh;
+  }
+  .img-milieu {
+    width: 90%;
+  }
+  .img-milieu img {
+    height: 20vh;
+  }
+  .img_right {
+    width: 90%;
+  }
+  .img_right img {
+    height: 20vh;
+  }
+ 
   .textimg {
-    width: 100%;
-    text-align: center;
-    height: 3.5vh;
+    border-radius: 0px 0px 15px 15px;
+    height: 8.5vh;
   }
-  .textimg h4 {
-    padding-top: .7vh;
-  }
-  /*** FIN ACTIVITE ***/
+  
+  /************* FIN ACTIVITE *************/
+
+  /* FOOTER */
+ footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60vh;
+}
+.footer_align{
+  margin: 0 10.5rem 0rem 5%;
+}
+.footer_align h3{
+  padding-bottom: 2vh;
+}
+/************* FIN FOOTER *************/ 
 
 }
 /******************************************************* FIN MEDIA QUERIES TABLETTE **************************************************************/
