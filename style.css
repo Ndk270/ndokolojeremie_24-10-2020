@@ -55,7 +55,7 @@ header  a {
   }
 
   .sincrire {
-    color: red !important;
+    color: #0065FC !important;
   }
 /*****FIN HEADER*****/
 
@@ -227,6 +227,8 @@ main{
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   height: 15vh;
+  object-fit: cover;
+
 }
 .ranger1 {
   background-color: white;
@@ -385,7 +387,7 @@ aside .test p::after {
 
     }
    
-    .textimg a{
+    .textimg span{
       margin: 0 0 0rem 3%;
       font-weight: 600;
     }
